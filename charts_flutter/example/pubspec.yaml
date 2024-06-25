@@ -7,7 +7,6 @@ environment:
 dependencies:
   charts_flutter:
     path: ../
-  cupertino_icons: ^0.1.0
   flutter:
     sdk: flutter
   flutter_test:
