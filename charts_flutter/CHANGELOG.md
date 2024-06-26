@@ -1,3 +1,7 @@
+# 2.0.0
+* Migrate to null safety.
+* Support for Flutter 3.22.2.
+
 # 0.12.0
 * Add functions to draw horizontal or vertical links onto the dart charts web canvas.
 * Add "preserveSelection" functionality to InitialSelection chart Behavior.

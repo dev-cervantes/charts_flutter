@@ -25,9 +25,7 @@ import 'package:charts_common/common.dart' as common
         OutsideJustification,
         SelectionModelType,
         TextStyleSpec;
-import 'package:flutter/widgets.dart'
-    show BuildContext, EdgeInsets, Widget, hashValues;
-import 'package:meta/meta.dart' show immutable;
+import 'package:flutter/material.dart';
 import '../../chart_container.dart' show ChartContainerRenderObject;
 import '../chart_behavior.dart'
     show BuildableBehavior, ChartBehavior, GestureType;
@@ -88,7 +86,7 @@ class DatumLegend<D> extends ChartBehavior<D> {
   /// Styles for legend entry label text.
   final common.TextStyleSpec? entryTextStyle;
 
-  static const defaultCellPadding = const EdgeInsets.all(8.0);
+  static EdgeInsets get defaultCellPadding => const EdgeInsets.all(8.0);
 
   /// Create a new tabular layout legend.
   ///
@@ -275,7 +273,7 @@ class DatumLegend<D> extends ChartBehavior<D> {
 
   @override
   int get hashCode {
-    return hashValues(
+    return Object.hash(
         selectionModelType,
         contentBuilder,
         position,
